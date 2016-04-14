@@ -28,59 +28,69 @@ public class Botones extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jbt_Buscar = new javax.swing.JButton();
+        jbt_Agregar = new javax.swing.JButton();
+        jbt_Modificar = new javax.swing.JButton();
+        jbt_Eliminar = new javax.swing.JButton();
 
         setOpaque(false);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Buscar.png"))); // NOI18N
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton1.setFocusPainted(false);
-        jButton1.setFocusable(false);
+        jbt_Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Buscar.png"))); // NOI18N
+        jbt_Buscar.setActionCommand("Buscar");
+        jbt_Buscar.setBorderPainted(false);
+        jbt_Buscar.setContentAreaFilled(false);
+        jbt_Buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jbt_Buscar.setFocusPainted(false);
+        jbt_Buscar.setFocusable(false);
 
-        jButton2.setText("jButton2");
+        jbt_Agregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/agregar.png"))); // NOI18N
+        jbt_Agregar.setActionCommand("Agregar");
+        jbt_Agregar.setBorderPainted(false);
+        jbt_Agregar.setContentAreaFilled(false);
 
-        jButton3.setText("jButton3");
+        jbt_Modificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Modificar.png"))); // NOI18N
+        jbt_Modificar.setActionCommand("Modificar");
+        jbt_Modificar.setBorderPainted(false);
+        jbt_Modificar.setContentAreaFilled(false);
 
-        jButton4.setText("jButton4");
+        jbt_Eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Borrar.png"))); // NOI18N
+        jbt_Eliminar.setActionCommand("Eliminar");
+        jbt_Eliminar.setBorderPainted(false);
+        jbt_Eliminar.setContentAreaFilled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(26, 26, 26)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jbt_Buscar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jbt_Agregar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jbt_Modificar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jbt_Eliminar)
+                .addContainerGap(62, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
-                .addContainerGap(211, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jbt_Eliminar)
+                    .addComponent(jbt_Agregar)
+                    .addComponent(jbt_Buscar)
+                    .addComponent(jbt_Modificar))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jbt_Agregar;
+    private javax.swing.JButton jbt_Buscar;
+    private javax.swing.JButton jbt_Eliminar;
+    private javax.swing.JButton jbt_Modificar;
     // End of variables declaration//GEN-END:variables
 }

@@ -28,18 +28,31 @@ public class RegistroParqueo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jl_Titulo = new javax.swing.JLabel();
+        botones1 = new Vista.Botones();
+        jl_Girasol = new javax.swing.JLabel();
+        informacionParqueo1 = new Vista.InformacionParqueo();
+        jl_Fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(595, 500));
+        getContentPane().setLayout(null);
+
+        jl_Titulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Titulo.png"))); // NOI18N
+        getContentPane().add(jl_Titulo);
+        jl_Titulo.setBounds(20, 10, 570, 130);
+        getContentPane().add(botones1);
+        botones1.setBounds(20, 320, 613, 153);
+
+        jl_Girasol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/GirasolUCR.png"))); // NOI18N
+        getContentPane().add(jl_Girasol);
+        jl_Girasol.setBounds(360, -20, 310, 520);
+        getContentPane().add(informacionParqueo1);
+        informacionParqueo1.setBounds(70, 120, 400, 309);
+
+        jl_Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/FondoBlanco.png"))); // NOI18N
+        getContentPane().add(jl_Fondo);
+        jl_Fondo.setBounds(0, 0, 598, 490);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -80,5 +93,10 @@ public class RegistroParqueo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private Vista.Botones botones1;
+    private Vista.InformacionParqueo informacionParqueo1;
+    private javax.swing.JLabel jl_Fondo;
+    private javax.swing.JLabel jl_Girasol;
+    private javax.swing.JLabel jl_Titulo;
     // End of variables declaration//GEN-END:variables
 }
