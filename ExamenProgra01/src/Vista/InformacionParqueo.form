@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jl_numRegistro" max="32767" attributes="0"/>
+                  <Component id="jl_NombreDuenio" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jl_CedulaDuenio" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
+                  <Component id="jl_Placa" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jt_Registro" min="-2" pref="73" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jt_Placa" max="32767" attributes="0"/>
+                      <Component id="jt_Cedula" max="32767" attributes="0"/>
+                      <Component id="jt_Nombre" min="-2" pref="106" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="154" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jl_numRegistro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jt_Registro" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jt_Nombre" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="jl_NombreDuenio" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jt_Cedula" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Component id="jl_CedulaDuenio" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jt_Placa" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="jl_Placa" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jl_numRegistro">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero de Registro"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jl_NombreDuenio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre del Due&#xf1;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jl_CedulaDuenio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xe9;dula del Due&#xf1;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jl_Placa">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Placa del Atom&#xf3;vil"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jt_Nombre">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jt_Registro">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jt_Cedula">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jt_Placa">
+    </Component>
+  </SubComponents>
+</Form>
