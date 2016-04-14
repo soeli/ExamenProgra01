@@ -6,17 +6,29 @@
 
 package Vista;
 
+import Controlador.ControladorRegistro;
+
 /**
  *
  * @author SOFIA ELIZONDO
  */
 public class Botones extends javax.swing.JPanel {
+    ControladorRegistro controlador;
 
     /**
      * Creates new form Botones
      */
     public Botones() {
         initComponents();
+    }
+    
+    public void agregarEventos(ControladorRegistro controlador)
+    {
+        this.controlador=controlador;
+        this.jbt_Buscar.addActionListener(controlador);
+        this.jbt_Agregar.addActionListener(controlador);
+        this.jbt_Modificar.addActionListener(controlador);
+        this.jbt_Eliminar.addActionListener(controlador);
     }
 
     /**

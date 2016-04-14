@@ -19,8 +19,30 @@ public class InformacionParqueo extends javax.swing.JPanel {
         initComponents();
     }
     
+    public String[] enviarInformacion()
+    {
+        String[] informacion;
+        informacion=new String[3];
+        informacion[0]=jt_Registro.getText();
+        informacion[1]=this.jt_Nombre.getText();
+        informacion[2]=this.jt_Cedula.getText();
+        informacion[3]=this.jt_Placa.getText();
+        
+        return informacion;
+    }
     
+    public void devolverInformacion(String informacion[])
+    {
+        this.jt_Registro.setText(informacion[0]);
+        this.jt_Nombre.setText(informacion[0]);
+        this.jt_Cedula.setText(informacion[0]);
+        this.jt_Placa.setText(informacion[0]);
+    }
     
+    public String devolverNumRegistro()
+    {
+        return this.jt_Registro.getText();
+    }
     //enabled
     //setText blanquear y dar informacion
     //getText traer info
