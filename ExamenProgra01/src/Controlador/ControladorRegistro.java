@@ -42,13 +42,13 @@ public class ControladorRegistro implements ActionListener{
            {
                registroParqueo.mostrarMensaje("Registro en uso");
                 System.out.println("Rigistro Ocupado");
-                registroParqueo.estadoInicial();
+                registroParqueo.estadoInicial(metodos.numRegistro());
             }
            else
             {
                 metodos.agregarAutos(registroParqueo.devolverInformacion());
                 registroParqueo.mostrarMensaje("Auto Registrado");
-                registroParqueo.estadoInicial();
+                registroParqueo.estadoInicial(metodos.numRegistro());
            }
             
             System.out.println("Agregar");
@@ -62,12 +62,12 @@ public class ControladorRegistro implements ActionListener{
             {
                 this.metodos.modificarAutos(registroParqueo.devolverInformacion());
                 this.registroParqueo.mostrarMensaje("Registro Modificado");
-                registroParqueo.estadoInicial();
+                registroParqueo.estadoInicial(metodos.numRegistro());
             }
             else
             {
                 this.registroParqueo.mostrarMensaje("Registro no existe");
-                registroParqueo.estadoInicial();
+                registroParqueo.estadoInicial(metodos.numRegistro());
             }
             System.out.println("Modificar");
         }
@@ -79,12 +79,12 @@ public class ControladorRegistro implements ActionListener{
             {
                 this.metodos.eliminarAutos(this.registroParqueo.devolverInformacion());
                 this.registroParqueo.mostrarMensaje("Registro Eliminado");
-                registroParqueo.estadoInicial();
+                registroParqueo.estadoInicial(metodos.numRegistro());
             }
             else
             {
                 this.registroParqueo.mostrarMensaje("Registro no existe");
-                registroParqueo.estadoInicial();
+                registroParqueo.estadoInicial(metodos.numRegistro());
             }
             System.out.println("Eliminar");
         }

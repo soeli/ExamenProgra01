@@ -27,7 +27,7 @@ public class RegistroParqueo extends javax.swing.JFrame {
         setVisible(false);
         controlador=new ControladorRegistro(this);
         this.botones1.agregarEventos(controlador);
-        estadoInicial();
+        estadoInicial("1");
         
     }
     
@@ -58,11 +58,12 @@ public class RegistroParqueo extends javax.swing.JFrame {
         this.informacionParqueo1.habilitarAgregar();
     }
 
-    public void estadoInicial()
+    public void estadoInicial(String numRegistro)
     {
         this.botones1.estadoInicial();
         this.informacionParqueo1.blanquear();
         this.informacionParqueo1.estadoInicial();
+        informacionParqueo1.numRegistro(numRegistro);
     }
     
     public void habilitarModificar()
@@ -70,6 +71,9 @@ public class RegistroParqueo extends javax.swing.JFrame {
         this.botones1.habilitarModificar();
         this.informacionParqueo1.habilitarAgregar();
     }
+    
+   
+    
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

@@ -35,6 +35,11 @@ public class InformacionParqueo extends javax.swing.JPanel {
     {
         return this.jt_Registro.getText();
     }
+    
+    public void numRegistro(String numRegistro)
+    {
+        this.jt_Registro.setText(numRegistro);
+    }
  
     
     public void mostrarInformacion(String informacion[])

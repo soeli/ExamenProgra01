@@ -82,31 +82,30 @@ public class MetodosParqueo {
     }
     
     
-    
-    
-//    public String devolverCodigo()
-//    {
-//        String codigo= "";
-//        
-//        if(arrayMatricula.size()==0)
-//        {
-//            codigo="1";
-//        }
-//        else
-//        {
-//            for(int contador=0;contador<arrayMatricula.size();contador++)
-//            {
-//                if(arrayMatricula.get(contador)!=null)
-//                {
-//                    codigo=arrayMatricula.get(contador).getCodigo();
-//                }
-//            }
-//            int numero=Integer.parseInt(codigo);
-//            numero++;
-//            codigo=""+numero;
-//        }
-//        
-//        return codigo; 
-//    }
+    public String numRegistro()
+    {
+       
+        String numRegistro="";
+        if(arrayAutos.size()==0)
+        {
+            numRegistro="1";
+        }
+        else
+        {
+            for(int contador=0;contador<arrayAutos.size();contador++)
+            {
+                 if(arrayAutos.get(contador)!=null)
+                 {
+                     numRegistro=arrayAutos.get(contador).getNumRegistro();
+                 }
+            }
+            int numero=Integer.parseInt(numRegistro);
+            numero++;
+            numRegistro=""+numero;
+        }
+        return numRegistro;
+        
+    }
+
     
 }
