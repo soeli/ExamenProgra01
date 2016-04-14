@@ -27,29 +27,49 @@ public class RegistroParqueo extends javax.swing.JFrame {
         setVisible(false);
         controlador=new ControladorRegistro(this);
         this.botones1.agregarEventos(controlador);
+        estadoInicial();
         
     }
     
     
+  
+    public String[] devolverInformacion()
+    {
+        return informacionParqueo1.devolverInformacion();
+    }
     public String devolverRegistro()
     {
-        return informacionParqueo1.devolverNumRegistro();
+        return informacionParqueo1.devolverRegistro();
     }
-    
-    public String[] enviarInformacion()
+    public void mostrarInformacion(String arreglo[])
     {
-         return this.informacionParqueo1.enviarInformacion();
-    }
-    
-    public void devolverInformacion(String informacion[])
-    {
-        this.informacionParqueo1.devolverInformacion(informacion);
+        informacionParqueo1.mostrarInformacion(arreglo);
+        
     }
     
     public void mostrarMensaje(String mensaje){
         JOptionPane.showMessageDialog(this, mensaje);
     }
     
+    
+    public void habilitarAgregar()
+    {
+        this.botones1.habilitarAgregar();
+        this.informacionParqueo1.habilitarAgregar();
+    }
+
+    public void estadoInicial()
+    {
+        this.botones1.estadoInicial();
+        this.informacionParqueo1.blanquear();
+        this.informacionParqueo1.estadoInicial();
+    }
+    
+    public void habilitarModificar()
+    {
+        this.botones1.habilitarModificar();
+        this.informacionParqueo1.habilitarAgregar();
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -67,15 +87,15 @@ public class RegistroParqueo extends javax.swing.JFrame {
 
         jl_Titulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Titulo.png"))); // NOI18N
         getContentPane().add(jl_Titulo);
-        jl_Titulo.setBounds(20, 10, 570, 130);
+        jl_Titulo.setBounds(20, 20, 570, 130);
         getContentPane().add(botones1);
-        botones1.setBounds(20, 320, 613, 153);
+        botones1.setBounds(0, 330, 613, 153);
 
         jl_Girasol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/GirasolUCR.png"))); // NOI18N
         getContentPane().add(jl_Girasol);
         jl_Girasol.setBounds(360, -20, 310, 520);
         getContentPane().add(informacionParqueo1);
-        informacionParqueo1.setBounds(70, 120, 400, 309);
+        informacionParqueo1.setBounds(80, 130, 400, 309);
 
         jl_Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/FondoBlanco.png"))); // NOI18N
         getContentPane().add(jl_Fondo);

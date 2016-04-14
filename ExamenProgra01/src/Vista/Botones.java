@@ -30,6 +30,31 @@ public class Botones extends javax.swing.JPanel {
         this.jbt_Modificar.addActionListener(controlador);
         this.jbt_Eliminar.addActionListener(controlador);
     }
+    
+    public void habilitarAgregar()
+    {
+        this.jbt_Agregar.setEnabled(true);
+        this.jbt_Buscar.setEnabled(true);
+        this.jbt_Eliminar.setEnabled(false);
+        this.jbt_Modificar.setEnabled(false);
+    }
+    
+    public void habilitarModificar()
+    {
+        this.jbt_Agregar.setEnabled(true);
+        this.jbt_Buscar.setEnabled(true);
+        this.jbt_Eliminar.setEnabled(true);
+        this.jbt_Modificar.setEnabled(true);
+    }
+    
+    
+    public void estadoInicial()
+    {
+        this.jbt_Agregar.setEnabled(false);
+        this.jbt_Buscar.setEnabled(true);
+        this.jbt_Eliminar.setEnabled(false);
+        this.jbt_Modificar.setEnabled(false);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.

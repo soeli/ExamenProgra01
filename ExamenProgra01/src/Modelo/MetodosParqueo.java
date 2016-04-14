@@ -18,7 +18,7 @@ public class MetodosParqueo {
     ControladorRegistro controlador;
     
     private ArrayList <Auto> arrayAutos;
-    String arregloDevolverInformacion[]=new String[3];
+    String arregloDevolverInformacion[]=new String[4];
     
     public MetodosParqueo()
     {
@@ -43,8 +43,9 @@ public class MetodosParqueo {
     }
     
     
-    public String[] devolverInformacion()
+    public String[] devolverInformacion(String registro)
     {
+        consultaAutos(registro);
         return arregloDevolverInformacion;
     }
     
@@ -58,11 +59,12 @@ public class MetodosParqueo {
     {
         for(int contador=0;contador<arrayAutos.size();contador++)
         {
-            if(arrayAutos.get(contador).getNumRegistro().equals(informacion))
+            if(arrayAutos.get(contador).getNumRegistro().equals(informacion[0]))
             {
                 arrayAutos.get(contador).setNombreDuenio(informacion[1]);
                 arrayAutos.get(contador).setCedulaDuenio(informacion[2]);
                 arrayAutos.get(contador).setPlacaAuto(informacion[3]);
+                
             }
         }
     }
@@ -71,9 +73,10 @@ public class MetodosParqueo {
     {
         for(int contador=0;contador<arrayAutos.size();contador++)
         {
-            if(arrayAutos.get(contador).getNumRegistro().equals(informacion))
+            if(arrayAutos.get(contador).getNumRegistro().equals(informacion[0]))
             {
                 arrayAutos.remove(contador);
+                
             }
         }
     }

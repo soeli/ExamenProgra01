@@ -18,31 +18,57 @@ public class InformacionParqueo extends javax.swing.JPanel {
     public InformacionParqueo() {
         initComponents();
     }
-    
-    public String[] enviarInformacion()
+    public String[] devolverInformacion()
     {
-        String[] informacion;
-        informacion=new String[3];
-        informacion[0]=jt_Registro.getText();
-        informacion[1]=this.jt_Nombre.getText();
-        informacion[2]=this.jt_Cedula.getText();
-        informacion[3]=this.jt_Placa.getText();
+        String arreglo[];
+        arreglo=new String[4];
+        arreglo[0]=this.jt_Registro.getText();
+        arreglo[1]=this.jt_Nombre.getText();
+        arreglo[2]=this.jt_Cedula.getText();
+        arreglo[3]=this.jt_Placa.getText();
         
-        return informacion;
+        return arreglo;
     }
     
-    public void devolverInformacion(String informacion[])
-    {
-        this.jt_Registro.setText(informacion[0]);
-        this.jt_Nombre.setText(informacion[0]);
-        this.jt_Cedula.setText(informacion[0]);
-        this.jt_Placa.setText(informacion[0]);
-    }
     
-    public String devolverNumRegistro()
+    public String devolverRegistro()
     {
         return this.jt_Registro.getText();
     }
+ 
+    
+    public void mostrarInformacion(String informacion[])
+    {
+        this.jt_Nombre.setText(informacion[0]);
+        this.jt_Cedula.setText(informacion[1]);
+        this.jt_Placa.setText(informacion[2]);
+    }
+    
+    public void blanquear()
+    {
+        this.jt_Nombre.setText("");
+        this.jt_Cedula.setText("");
+        this.jt_Placa.setText("");
+    }
+
+    
+    public void habilitarAgregar()
+    {
+        this.jt_Registro.setEnabled(false);
+        this.jt_Cedula.setEnabled(true);
+        this.jt_Placa.setEnabled(true);
+        this.jt_Nombre.setEnabled(true);
+    }
+    
+    
+    public void estadoInicial()
+    {
+        this.jt_Registro.setEnabled(true);
+        this.jt_Cedula.setEnabled(false);
+        this.jt_Placa.setEnabled(false);
+        this.jt_Nombre.setEnabled(false);
+    }
+    
     //enabled
     //setText blanquear y dar informacion
     //getText traer info
